@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System. Threading.Tasks;
+namespace Condicionescompuestas
+{
+    class program
+    {
+        static void Main (string[]args)
+        {
+            float sueldo;
+            int antiguedad;
+            string linea;
+            Console.Write("ingrese sueldo del empleado:");
+            linea = Console.ReadLine();
+            sueldo = float.Parse(linea);
+            Console.Write("ingrse su antiguedad en años:");
+            linea= Console.ReadLine();
+            antiguedad=int.Parse(linea);
+            if (sueldo<500&& antiguedad >10)
+            {
+                float aumento=sueldo *0.20f;
+                float sueldo total= sueldo + aumento;
+                Console.Write("sueldo a pagar:");
+                Console.Write(sueldo total)
+            }
+            else
+            {
+                if (sueldo< 500)
+                {
+                    float aumento= sueldo * 0.5f;
+                    float sueldo total= sueldo + aumento;
+                    Console.Write("sueldo a pagar:");
+                    Console.Write(sueldo total);
+                
+                }
+                else
+                {
+                    Console.Write("sueldo a pagar:");
+                    Console.Write(sueldo);
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace Cargaladocuadradoyperimetro
+{
+    class program
+{
+    static void Main (string [] ArraySegment)
+    {
+        int cargalado = 1, perimetro;
+        string linea;
+        Console.Write("ingrese el primer valor:");
+        linea = Console.ReadLine();
+        cargalado = int.Parse(linea);
+        perimetro = cargalado * 4;
+        Console.Write("el valor del cargo de lado es:");
+        Console.WriteLine(cargalado);
+        Console.Write("el valoe del perimetro es:");
+        Console.WriteLine(perimetro);
+        Console.ReadKey();
+    }
+}
+}

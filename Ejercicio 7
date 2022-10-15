@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System. Threading.Tasks;
+namespace Estructura repetitivaWhile 11
+{
+    class program
+    {
+        static void  Main (string[]args)
+        {
+            int n,x,valor,pares,impares;
+            string linea;
+            x=1;
+            pares= 0;
+            impares = 0;
+            Console.Write(" cuantos numeros ingresara:");
+            linea = Console.ReadLine(;)
+            n = int.Parse(linea);
+            while (x< = n)
+            {
+                Console.Write("ingrse el valor:");
+                linea=Console.ReadLine();
+                valor= int.Parse(linea);;
+                if(valor%2==0)
+                {
+                    pares==pares + 1;
+                }
+                else
+                {
+                    impares==impares + 1;
+                }
+                x = x + 1;
+            }
+            Console.Write("cantidad de pares:");
+            Console.WriteLine(pares);
+            Console.Write("cantidad de impares:");
+            Console.write(impares);
+            Console.ReadKey();
+
+
+
+        }
+    }
+}
